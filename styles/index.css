@@ -17,8 +17,37 @@
 .banner-card{
     border-bottom: 3px solid rgb(29, 209, 0);
     border-radius: 24px;
+    margin: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 .banner-section .card-items img{
     border: 1px dashed gray;
     margin-right: 1rem;
+}
+.elipse{
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+}
+.elipse-1{
+    width: 48px;
+    height: 24px;
+    background-color: white;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+}
+.elipse-2{
+    width: 48px;
+    height: 24px;
+    background-color: white;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+}
+.small-border{
+    height: 100%;
+    border-right: 2px dashed rgb(255, 255, 255);
+}
+.offers-card{
+    border-radius: 24px;
+    margin:24px 10px;
 }
