@@ -99,6 +99,14 @@
     border: 2px dashed rgb(29, 209, 0);
 }
 
+.availibility-border{
+    border-top: 1px dashed rgba(3, 7, 18, 0.2);
+    border-bottom:1px dashed rgba(3, 7, 18, 0.2);
+}
+.display-seat{
+    border-right: 1px dashed rgba(3, 7, 18, 0.2);
+}
+
 @media only screen and (max-width:992px) {
     .solid-rock .elipsee{
        display: none;

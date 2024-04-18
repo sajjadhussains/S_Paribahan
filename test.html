@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Div Click Example</title>
+<style>
+    .myDiv {
+        padding: 10px;
+        border: 1px solid #000;
+        margin: 5px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<div class="myDiv">Div 1</div>
+<div class="myDiv">Div 2</div>
+<div class="myDiv">Div 3</div>
+<div class="myDiv">Div 4</div>
+<div class="myDiv">Div 5</div>
+
+<script>
+    // Get all div elements with class "myDiv"
+    var divs = document.querySelectorAll('.myDiv');
+
+    // Add click event listener to each div
+    divs.forEach(function(div) {
+        div.addEventListener('click', function() {
+            // Access inner text of clicked div
+            var innerText = this.innerText;
+            console.log(innerText); // You can do whatever you want with innerText here
+        });
+    });
+</script>
+
+</body>
+</html>
