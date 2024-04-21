@@ -22,7 +22,7 @@ allSeats.forEach(function(seat) {
         if (!clicked && (innerText != 'A' && innerText != 'B' && innerText != 'C' && innerText != 'D' && innerText != 'E' && innerText != 'F' && innerText != 'G' && innerText != 'H' && innerText != 'I' && innerText != 'J') && i<4) {
             clicked = true; 
             seat.classList.remove("bg-[#F7F8F8]");
-            seat.classList.add("bg-[#1DD100]");
+            seat.classList.add("bg-[#1DD100]","text-white");
             makeTableRow(innerText);
             let price=(i+1)*550;
             seats--;
