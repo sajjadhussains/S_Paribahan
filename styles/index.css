@@ -120,6 +120,9 @@
 .price-border{
     border-top: 1px solid rgba(3, 7, 18, 0.2);
 }
+.price-border-bottom{
+    border-bottom: 1px solid rgba(3, 7, 18, 0.2);
+}
 /* .seat-design> :nth-child(2n){
     margin-right: 32px;
 } */

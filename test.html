@@ -27,10 +27,14 @@
 
     // Add click event listener to each div
     divs.forEach(function(div) {
+        var clicked = false; // Flag to track if div has been clicked
+
         div.addEventListener('click', function() {
-            // Access inner text of clicked div
-            var innerText = this.innerText;
-            console.log(innerText); // You can do whatever you want with innerText here
+            if (!clicked) { // If not already clicked
+                clicked = true; // Set clicked to true
+                var innerText = this.innerText;
+                console.log(innerText); // You can do whatever you want with innerText here
+            }
         });
     });
 </script>
