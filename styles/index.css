@@ -106,12 +106,30 @@
 .display-seat{
     border-right: 1px dashed rgba(3, 7, 18, 0.2);
 }
+.seat-design{
+    display: grid;
+    grid-template-columns: 22px repeat(4,1fr);
+}
+.grid-item{
+    width:110px;
+}
 
+.select-seat-border{
+    border-bottom: 1px dashed rgba(3, 7, 18, 0.2);
+}
+.price-border{
+    border-top: 1px solid rgba(3, 7, 18, 0.2);
+}
+/* .seat-design> :nth-child(2n){
+    margin-right: 32px;
+} */
 @media only screen and (max-width:992px) {
     .solid-rock .elipsee{
        display: none;
     }
 }
 @media only screen and (max-width:640px) {
-   
+   .grid-item{
+    width: 65px;
+   }
 }
